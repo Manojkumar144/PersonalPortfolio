@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manoj Kumar - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/indexStyles.css"> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <a class="navbar-brand" href="#main-container">Manoj.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contactForm">Contact</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+         <div class="container" id="main-container">
+            <div class="myPhoto">
+             <img src="Images/MyPhoto.jpg" class="mee" id="myself">
+            </div>
+
+            <div class="contents">
+             <h3>Hi, I'm Manoj Kumar</h3>
+             <h4>Software Developer</h4>
+                <p>Experienced software developer with 1 year of professional experience in HTML5, CSS, JavaScript, C#, MsSqlServer,
+                 Bootstrap, and Java. Proven track record in developing web applications, including personal projects, using a range of
+                 technologies that are mentioned below. Seeking a Software Developer position to apply expertise in creating innovative solutions.
+                </p>
+               <div class="btn-box">
+                <a href="#contactForm" id="openForm">Let's Talk</a>
+               </div>    
+              <div class="home-sci">
+                <a href="https://www.linkedin.com/in/manoj-kumar-1787031b5/"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+              </div>      
+            </div>   
+         </div>    
+        
+         <div id="skills" class="skills">
+          <h1> Skills</h1>
+          <img src="Images/Html2.png" class="skillsIcon">
+          <img src="Images/cssImage.png" class="skillsIcon">
+          <img src="Images/Javascript.png" class="skillsIcon">
+          <img src="Images/javaImage.png" class="skillsIcon" id="javaIcon">
+          <img src="Images/nodejs.png" class="skillsIcon" id="nodeJsIcon">
+          <img src="Images/expressJsImage.png" class="skillsIcon" id="expressJsIcon">
+          <img src="Images/sqlImage.png" class="skillsIcon" id="sqlIcon">
+          <img src="Images/MySQL.png" class="skillsIcon" id="mySqlIcon">
+          <img src="Images/sequelizeImage.png" class="skillsIcon" id="sequelizeIcon">
+         </div>
+
+         <!-- projects -->
+            <div class="project-form">
+             <h2>Projects</h2>
+             <div class="project1">
+             <h4>BudgetBuddy</h4>
+               <h6>Tools/Technologies Used:</h6>
+               <p>HTML, CSS, Javascript, Bootstrap, NodeJs, ExpressJs, MySql, Sql, Sequelize, AWS, Jenkins, Nginx, Visual Studio Code, Razorpay, SendInBlue</p>
+               <h6>About project:</h6>
+               <p>The application serves as an expense tracking solution, enabling users to effortlessly monitor and retrieve their expenditure data as needed. Additionally, it is seamlessly integrated with AWS for reliable and efficient deployment</p>
+             </div>
+               <div class="project1">
+                 <h4>Meeting Scheduler</h4>
+                  <h6>Tools/Technologies Used:</h6>
+                  <p>HTML, CSS, Javascript, NodeJs, ExpressJs, MySql, Sql, Sequelize,Visual Studio Code, Ejs(Template Engine)</p>
+                  <h6>About project:</h6>
+                  <p>The Meeting Scheduler Application simplifies the process of booking meetings by allowing users to reserve available time slots. When a user cancels a meeting, the corresponding slot becomes available for others to utilize. This dynamic system generates slots based on availability retrieved from the database in real-time</p>
+               </div>
+               <div class="project1">
+                 <h4>CircProProfileHub</h4>
+                  <h6>Tools/Technologies Used:</h6>
+                  <p>HTML, CSS, Javascript,NodeJs, ExpressJs, MySql, Sql, Sequelize,Visual Studio Code</p>
+                  <h6>About project:</h6>
+                  <p>CricProfileHub is an administrative application designed to manage player profiles.Also It facilitates the updating of player information</p>
+               </div>
+            </div>
+
+
+        <!-- contact form -->
+      <div class="wrapper" id="contactForm">
+        <form action="/sendEmail" method="POST">
+           <h1 >let's talk</h1>
+           <div class="input-box">          
+            <input type="text" class="input" id="name"  name="name" placeholder="Enter your Name" required>
+          </div>
+              <div class="input-box">          
+               <input type="email" class="input" id="email"  name="email" placeholder="Enter your Email" required>
+             </div>
+             <div class="input-box"> 
+              <textarea name="message" placeholder="Enter Your Message" required></textarea>
+             </div>
+             <button type="submit" class="btn" >Send</button>
+        </form>
+        <button id="closeForm">Close</button>
+       </div>
+       <div class="end">
+        &copy; 2024 Manoj Kumar. All rights reserved.
+    </div>
+   
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        const navbar = document.querySelector(".navbar");
+    const originalColor = "#1B3C73"; // Original background color
+    const navbarHeight = navbar.offsetHeight;
+
+    window.onscroll = function() {
+        let contentTop = document.querySelector(".contents").offsetTop;
+        let myPhotoTop = document.querySelector(".myPhoto").offsetTop;
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop < contentTop - navbarHeight || scrollTop === 0 || scrollTop < myPhotoTop - navbarHeight) {
+        navbar.style.backgroundColor = "transparent"; // Change to transparent if content is not below navbar or photo is above navbar
+    } else {
+        navbar.style.backgroundColor = originalColor; // Change to your default color when scrolling down and content is below navbar and photo
+    }
+    }
+    document.getElementById("openForm").addEventListener("click", function() {
+            document.getElementById("contactForm").style.display = "block";
+        });
+
+        document.getElementById("closeForm").addEventListener("click", function() {
+            document.getElementById("contactForm").style.display = "none";
+        });
+
+        document.body.addEventListener('click', function(event) {
+    var navbar = document.querySelector('.navbar-collapse');
+    var toggleButton = document.querySelector('.navbar-toggler');
+    
+    // Check if the clicked element is inside the navbar
+    var isInsideNavbar = navbar.contains(event.target);
+    var isToggleButton = toggleButton.contains(event.target);
+
+    // Close the toggle button if the clicked element is outside the navbar and not the toggle button itself
+    if (!isInsideNavbar && !isToggleButton) {
+        navbar.classList.remove('show');
+    }
+});
+
+// contact-form
+// require('dotenv').config();// Load environment variables from .env file
+
+// const apiKey = process.env.SENDINBLUE_API_KEY;
+// const form = document.getElementById('lets-talk-form'); // Accessing form by ID
+// form.addEventListener('submit', async (e) => {
+//     e.preventDefault();
+
+//     const email = document.getElementById('email').value;
+//     // const message = document.getElementById('message').value; // Corrected ID
+//     const message = document.getElementsByName('message')[0].value;
+
+//     try {
+//         const response = await fetch('https://api.sendinblue.com/v3/smtp/email', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json',
+//                 'api-key': apiKey
+//             },
+//             body: JSON.stringify({
+//                 sender: { email: email },
+//                 to: [{ email: 'manojhustler14@gmail.com' }],
+//                 subject: 'New message from contact form',
+//                 htmlContent: message
+//             })
+//         });
+//         if (response.ok) {
+//             alert('Message sent successfully!');
+//             form.reset();
+//         } else {
+//             alert('Failed to send message. Please try again later.');
+//         }
+//     } catch (error) {
+//         console.error('Error:', error);
+//         alert('An error occurred. Please try again later.');
+//     }
+// });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@sendinblue/client@6"></script>
+
+     
+</body>
+</html>
