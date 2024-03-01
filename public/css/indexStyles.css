@@ -49,17 +49,14 @@ img:hover{
     cursor: pointer;
 }
 
-
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(11, 165, 251)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
-  
 
 .navbar-toggler {
     border:none;
     border-color: #0BA5FB;
   } 
-
 
 .navbar-toggler.active.focus, .navbar-toggler.active:focus, .navbar-toggler.focus, .navbar-toggler:active.focus, .navbar-toggler:active:focus, .navbar-toggler:focus {
     outline: 0;
@@ -69,27 +66,24 @@ img:hover{
     height: 300px;
     width:290px;
     border-radius: 50%;
-    transition: opacity 0.5s ease;
-    
+    transition: opacity 0.5s ease;  
 }
 
 .contents, .myPhoto {
-    /* margin-top: 130px; */
-    padding: 10px; /* Optional: Add padding for spacing */
+    padding: 10px; 
     
 }
 
 .container {
     display: flex;
-    justify-content: space-between; /* Aligns items with space between them */
-    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; 
+    align-items: center; 
     margin-top: 50px;
 }
 
 .myPhoto {
- /* Adjust as needed */
  padding-left: 0;
-  margin-top: 60px; /* Adjust the value as needed */
+  margin-top: 60px; 
 }
 
 .mee:hover{
@@ -99,25 +93,25 @@ img:hover{
 
 @media (max-width: 576px) {
     .container {
-      flex-direction: column; /* Stack items vertically */
+      flex-direction: column; 
     }
   
     .contents,
     .myPhoto {
-      width: 100%; /* Ensure both divs take full width */
+      width: 100%; 
     }
 
     .myPhoto {
-      margin-top: 60px; /* Ensure both divs take full width */
+      margin-top: 60px;
     }
 
     .mee {
         width: 70%;
         height: 10%;
         border-radius: 50%;
-        display: block; /*Ensure the image behaves as a block element */
-        margin-left: auto; /* Center the image horizontally */
-        margin-right: auto; /* Center the image horizontally */   
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
       }
 
       .home-sci{
@@ -135,6 +129,7 @@ img:hover{
   justify-content: space-between;
   width:100%;
   background-color: #6499E9;
+  margin-bottom: 10px;
   }
 
   .skills h1{
@@ -146,8 +141,13 @@ img:hover{
     margin-left: 10px;
     margin-top:10px;
     justify-content: space-between;
+   
+  }
+
+  #htmlIcon,#cssIcon, #javascriptIcon
+  {
     width: 70px;
-    height: auto;
+  height: auto;
   }
 
   #nodeJsIcon{
@@ -155,8 +155,8 @@ img:hover{
     height:auto;
   }
 
-  #expressJsIcon, #sequelizeIcon, #sqlIcon, #mySqlIcon, #javaIcon{
-    width:140px;
+  #expressJsIcon, #sequelizeIcon, #sqlIcon, #mySqlIcon, #javaIcon, #githubIcon, #awsIcon, #vsCodeIcon{
+    width:140px !important;
     height:auto;
   }
 
@@ -248,11 +248,12 @@ img:hover{
         margin-top:150px;
         margin-bottom:70px;
         background:transparent;
-        border: 2px solid rgba(20, 91, 244, 0.2);
+        border: 2px solid rgba(40, 45, 56, 0.2);
         color: white;
         width: 300px;
         border-radius: 10px;
         padding: 5px 20px;
+        background-color: #3887BE;
     }
     
     .wrapper h1
@@ -337,7 +338,8 @@ img:hover{
 
 .project-form{
   margin-top: 20px;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
+  padding-bottom: 5px; 
   overflow: auto;
 }
 .project-form h2{
@@ -347,14 +349,11 @@ img:hover{
 }
 
    .project1{
-  /* height:300px; */
   height:auto;
-
   width:300px;
    float: left;
   margin: 10px;
   border-radius: 2%;
-   /* background: transparent; */
    border :2px solid rgba(11, 165, 251,.8);
     backdrop-filter: blur(2px);
     color:#0BA5FB;
@@ -383,11 +382,155 @@ img:hover{
 }
 
 .end {
-  background-color: #1B3C73; /* Change to your desired background color */
-  color: #ffffff; /* Text color */
-  padding: 20px; /* Adjust padding as needed */
-  text-align: center; /* Center align text */
-  font-size: 14px; /* Adjust font size as needed */
-  font-family: 'Poppins', sans-serif; /* Use Google Font 'Poppins' */
-  margin-top: 50px; /* Add margin-top to create space below projects */
+  background-color: #1B3C73; 
+  color: #ffffff; 
+  padding: 20px; 
+  text-align: center; 
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif; 
+  margin-top: 50px; 
+}
+
+/* portfolio--design ------------------------*/
+
+.work-experience-container {
+  width: 80%;
+  margin: 50px auto;
+  position: relative;
+}
+
+.work-experience {
+  display: flex;
+  align-items: flex-start; 
+  margin-bottom: 50px;
+}
+
+.work-experience h1 {
+color:#FFDD95;
+}
+
+.line {
+  position: relative;
+  width: 5px;
+  background-color: #0BA5FB;
+  margin-right: 20px;
+}
+
+.line::before {
+  content: '';
+  position: absolute;
+  background-color: #FBECB2;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  top: 0;
+  left: -3px; 
+}
+
+.work-experience-content {
+  flex-grow: 1;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.portfolio-container{
+  background-color: #3F72AF;
+}
+.work-experience-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #0BA5FB;
+}
+
+.portfolio-container >h2{
+  text-align:center;
+  color:#112D4E;
+}
+
+.line1 {
+  position: relative;
+  width: 5px;
+  background-color: #0BA5FB;
+  margin-right: 20px;
+}
+
+.line1::before {
+  content: '';
+  position: absolute;
+  background-color:#FBECB2;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  bottom: 40px;
+  left: -3px; 
+}
+
+.work-experience h2{
+  color: #211C6A;
+}
+
+.work-experience li{
+  color:#FEECE2;
+}
+
+.work-experience-content p{
+  color:#FEECE2;
+}
+
+.work-experience-content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.line.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.work-experience-content, .line {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.work-experience-content p {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+strong {
+color:#FFCF96;
+  
+}
+
+.year {
+  text-align: right;
+  color:#FFCF96;
+}
+
+.work-experience-content {
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.work-experience-content.show {
+  opacity: 1; 
+  transform: translateY(0); 
 }
