@@ -120,8 +120,7 @@ img:hover{
       }
       .home-sci a{
         position: relative;
-      }
-      
+      } 
   }
 
   .skills{
@@ -132,17 +131,17 @@ img:hover{
   margin-bottom: 10px;
   }
 
-  .skills h1{
+  .skills{
     text-align: center;
     color:#091A29;
   }
 
   .skillsIcon{
-    margin-left: 10px;
-    margin-top:10px;
-    justify-content: space-between;
-   
-  }
+    display:inline-block;
+  margin:auto;
+ padding:auto;
+  padding: 10px;
+}
 
   #htmlIcon,#cssIcon, #javascriptIcon
   {
@@ -351,15 +350,23 @@ img:hover{
    .project1{
   height:auto;
   width:300px;
-   float: left;
-  margin: 10px;
   border-radius: 2%;
    border :2px solid rgba(11, 165, 251,.8);
     backdrop-filter: blur(2px);
     color:#0BA5FB;
     width:300px;
     border-radius: 10px;
-    padding: 5px 20px; 
+}
+.project-form{
+  text-align: center;
+}
+.project1{
+  display:inline-block;
+margin:auto;
+margin-right:30px;
+margin-top: 30px;
+padding:auto;
+padding: 30px;
 }
 
 
